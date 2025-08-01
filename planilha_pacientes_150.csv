@@ -1,0 +1,151 @@
+Nome,Idade,Genero,Medico,Turno,Atestado,SindRespiratoria
+Tatiane Souza,75,F,Dr. Barros,2º turno,1,0
+Patrícia da Silva,58,F,Dr. Barros,1º turno,0,1
+Renata Martins,37,F,Dra. Almeida,2º turno,0,0
+Bianca Almeida,50,F,Dr. Barros,1º turno,0,1
+Bruno Oliveira,42,M,Dra. Martins,2º turno,0,0
+Larissa Almeida,30,F,Dra. Martins,3º turno,0,1
+Marina Oliveira,52,F,Dr. Costa,2º turno,1,0
+André Almeida,63,M,Dra. Martins,2º turno,1,0
+Patrícia Mendes,21,F,Dr. Barros,3º turno,1,1
+Tiago da Silva,63,M,Dr. Costa,1º turno,0,1
+Tatiane Martins,23,F,Dra. Martins,2º turno,0,0
+Eduardo Rocha,36,M,Dra. Almeida,1º turno,1,1
+Felipe Rocha,66,M,Dra. Martins,3º turno,1,1
+Lucas Mendes,24,M,Dr. Barros,2º turno,1,1
+Marcos Souza,32,M,Dr. Costa,3º turno,1,1
+Patrícia da Silva,69,F,Dr. Barros,3º turno,1,1
+Lucas Oliveira,86,M,Dra. Martins,2º turno,1,0
+Bruno Lima,75,M,Dr. Oliveira,1º turno,0,1
+Tiago Batista,45,M,Dra. Almeida,1º turno,0,0
+Patrícia Almeida,50,F,Dr. Oliveira,1º turno,1,0
+Renata Souza,63,F,Dr. Barros,3º turno,1,0
+Rafael Souza,53,M,Dr. Oliveira,3º turno,1,0
+Felipe Costa,71,M,Dr. Barros,1º turno,1,0
+Rafael Martins,69,M,Dr. Costa,1º turno,0,0
+Larissa Batista,83,F,Dr. Barros,2º turno,0,1
+Felipe Mendes,54,M,Dr. Barros,2º turno,1,0
+João Souza,18,M,Dra. Almeida,1º turno,0,0
+Felipe Martins,68,M,Dr. Oliveira,3º turno,1,0
+Fernanda Souza,81,F,Dra. Martins,1º turno,1,1
+Renata Lima,58,F,Dra. Martins,3º turno,0,1
+Marcos Souza,64,M,Dra. Almeida,2º turno,1,0
+Bianca Lima,88,F,Dra. Martins,2º turno,0,0
+Marina da Silva,48,F,Dra. Almeida,1º turno,1,1
+Carlos Almeida,78,M,Dra. Almeida,3º turno,1,1
+Ana Costa,27,F,Dr. Oliveira,2º turno,0,0
+João Costa,37,M,Dr. Oliveira,3º turno,1,1
+Fernanda da Silva,76,F,Dra. Almeida,1º turno,0,1
+Tatiane Martins,72,F,Dra. Almeida,1º turno,1,0
+Felipe Costa,42,M,Dr. Oliveira,2º turno,0,1
+Ana Costa,81,F,Dr. Costa,2º turno,1,1
+Lucas Lima,50,M,Dr. Oliveira,3º turno,0,1
+Bianca Souza,80,F,Dr. Barros,2º turno,0,0
+Lucas Martins,53,M,Dr. Costa,2º turno,0,1
+Bruno Mendes,82,M,Dr. Barros,3º turno,0,0
+Patrícia Souza,20,F,Dra. Almeida,3º turno,0,0
+Bruno Almeida,37,M,Dra. Martins,2º turno,0,0
+Lucas Souza,31,M,Dr. Barros,2º turno,1,1
+Bianca Martins,53,F,Dr. Barros,1º turno,1,0
+Bruno Mendes,37,M,Dr. Oliveira,1º turno,0,0
+Patrícia da Silva,76,F,Dr. Costa,1º turno,1,1
+André Oliveira,50,M,Dra. Martins,1º turno,0,0
+Bruno Rocha,49,M,Dr. Barros,1º turno,1,1
+Juliana Souza,68,F,Dra. Almeida,2º turno,1,1
+André Batista,61,M,Dr. Barros,1º turno,1,0
+Lucas Rocha,23,M,Dra. Martins,2º turno,1,1
+Fernanda Oliveira,29,F,Dr. Oliveira,2º turno,0,0
+André Batista,45,M,Dra. Martins,1º turno,1,0
+Fernanda Martins,38,F,Dra. Almeida,3º turno,1,1
+Fernanda Lima,60,F,Dra. Almeida,2º turno,0,0
+Renata Martins,59,F,Dr. Oliveira,2º turno,1,1
+Rafael Lima,48,M,Dr. Costa,1º turno,0,1
+Lucas Batista,41,M,Dra. Martins,1º turno,0,0
+João Martins,90,M,Dr. Costa,2º turno,0,1
+Tiago Souza,21,M,Dra. Almeida,1º turno,0,1
+João Rocha,24,M,Dr. Oliveira,1º turno,0,1
+Juliana Oliveira,30,F,Dr. Costa,1º turno,1,0
+Tatiane Batista,58,F,Dra. Almeida,1º turno,1,0
+Renata Martins,54,F,Dr. Barros,1º turno,1,1
+Ana Rocha,28,F,Dr. Costa,3º turno,0,0
+Larissa Lima,82,F,Dra. Almeida,1º turno,1,0
+André da Silva,82,M,Dr. Oliveira,1º turno,1,0
+Tatiane Lima,58,F,Dra. Almeida,3º turno,1,1
+Juliana Lima,63,F,Dra. Almeida,1º turno,0,0
+Bianca Mendes,52,F,Dr. Barros,1º turno,1,0
+Ana Rocha,71,F,Dr. Barros,3º turno,1,1
+João Lima,40,M,Dr. Barros,1º turno,1,1
+Bruno Rocha,21,M,Dr. Oliveira,1º turno,0,0
+Renata Batista,70,F,Dr. Barros,1º turno,0,1
+Ana Souza,61,F,Dra. Almeida,2º turno,0,0
+Bianca Oliveira,25,F,Dr. Barros,3º turno,0,0
+João Lima,45,M,Dr. Barros,3º turno,0,1
+André Oliveira,87,M,Dra. Almeida,3º turno,0,0
+Tatiane Martins,73,F,Dr. Oliveira,3º turno,1,0
+Juliana Souza,60,F,Dr. Costa,1º turno,1,0
+Bruno Batista,19,M,Dra. Almeida,2º turno,0,0
+Bianca Martins,51,F,Dr. Costa,3º turno,0,0
+Lucas Souza,71,M,Dra. Martins,1º turno,1,1
+Renata da Silva,36,F,Dra. Martins,1º turno,0,0
+Marcos Martins,56,M,Dr. Costa,3º turno,1,0
+Camila Costa,42,F,Dr. Costa,2º turno,1,0
+João Oliveira,52,M,Dra. Martins,3º turno,1,0
+André Mendes,41,M,Dr. Oliveira,2º turno,0,1
+André Lima,46,M,Dra. Almeida,1º turno,0,1
+João Almeida,51,M,Dr. Costa,3º turno,1,1
+Rafael Souza,76,M,Dr. Barros,1º turno,0,0
+Tiago Souza,32,M,Dra. Martins,3º turno,0,0
+Larissa Costa,48,F,Dr. Costa,2º turno,1,1
+Eduardo Souza,65,M,Dr. Oliveira,2º turno,0,1
+Lucas da Silva,73,M,Dra. Martins,2º turno,0,1
+Tiago da Silva,44,M,Dr. Costa,1º turno,1,0
+Marcos Rocha,52,M,Dr. Costa,1º turno,1,0
+Tiago Martins,21,M,Dra. Martins,2º turno,0,0
+Marcos Souza,83,M,Dr. Costa,1º turno,1,1
+Eduardo da Silva,73,M,Dra. Almeida,3º turno,0,1
+Tiago da Silva,85,M,Dr. Barros,2º turno,1,0
+André Oliveira,46,M,Dr. Costa,1º turno,1,0
+Ana Batista,53,F,Dra. Martins,2º turno,0,0
+Marcos Rocha,83,M,Dr. Costa,3º turno,1,0
+Lucas Costa,66,M,Dr. Oliveira,3º turno,0,0
+Rafael Souza,88,M,Dra. Almeida,1º turno,1,1
+Patrícia da Silva,83,F,Dr. Oliveira,3º turno,1,0
+Renata Mendes,82,F,Dra. Martins,1º turno,0,0
+Marina Batista,28,F,Dra. Almeida,1º turno,1,1
+Patrícia Lima,72,F,Dr. Oliveira,2º turno,1,1
+Bianca Oliveira,42,F,Dra. Martins,2º turno,0,1
+Marina Almeida,19,F,Dr. Costa,1º turno,1,0
+Juliana da Silva,42,F,Dr. Costa,2º turno,0,1
+Patrícia Martins,73,F,Dra. Martins,2º turno,1,1
+Camila Lima,79,F,Dra. Almeida,1º turno,0,1
+Felipe da Silva,74,M,Dr. Oliveira,1º turno,0,1
+Larissa Batista,39,F,Dr. Costa,1º turno,0,1
+André Costa,63,M,Dr. Oliveira,1º turno,0,1
+Marina da Silva,38,F,Dra. Martins,1º turno,1,1
+Marcos Lima,60,M,Dr. Costa,1º turno,0,0
+Camila Oliveira,80,F,Dr. Costa,3º turno,1,1
+André Martins,77,M,Dra. Martins,2º turno,0,1
+Renata Costa,90,F,Dr. Barros,2º turno,1,0
+Larissa Almeida,85,F,Dra. Martins,2º turno,1,1
+Marcos Batista,58,M,Dra. Almeida,3º turno,0,0
+Marcos Rocha,64,M,Dr. Oliveira,2º turno,0,0
+Ana Rocha,89,F,Dra. Almeida,2º turno,0,1
+Tiago Martins,89,M,Dr. Costa,1º turno,0,0
+Felipe Mendes,80,M,Dra. Almeida,2º turno,1,1
+Camila Lima,33,F,Dra. Almeida,3º turno,0,0
+Lucas Rocha,53,M,Dr. Costa,1º turno,0,1
+Tatiane Souza,59,F,Dr. Barros,2º turno,0,1
+Tiago Almeida,41,M,Dr. Barros,1º turno,0,1
+Bianca Rocha,28,F,Dr. Barros,1º turno,0,1
+Felipe Souza,45,M,Dra. Martins,1º turno,0,1
+Marina Batista,88,F,Dr. Oliveira,3º turno,1,0
+Ana Almeida,83,F,Dra. Almeida,3º turno,1,1
+Rafael Batista,40,M,Dr. Costa,2º turno,0,1
+Fernanda Oliveira,90,F,Dra. Martins,1º turno,0,1
+Fernanda Costa,70,F,Dr. Barros,1º turno,0,1
+Bruno Lima,25,M,Dra. Almeida,2º turno,1,0
+Fernanda Souza,44,F,Dra. Martins,2º turno,0,1
+Bruno Rocha,53,M,Dr. Oliveira,2º turno,0,0
+Rafael Oliveira,76,M,Dr. Oliveira,3º turno,1,1
+Rafael Martins,82,M,Dr. Barros,1º turno,1,1
+Juliana Costa,77,F,Dr. Costa,1º turno,0,0
