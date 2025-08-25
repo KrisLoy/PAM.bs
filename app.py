@@ -11,7 +11,7 @@ st.set_page_config(page_title="Painel de Atendimento Médico", layout="wide")
 # Função para carregar os dados
 @st.cache_data
 def carregar_dados():
-    df = pd.read_csv("planilha_pacientes_150.csv", sep=';', encoding='latin-1')
+    df = pd.read_csv("atendimentos.csv", sep=';', encoding='latin-1')
     df.columns = df.columns.str.strip()
     return df
 
@@ -21,7 +21,7 @@ df = carregar_dados()
 # Título
 st.title("Painel de Atendimento Médico")
 
-# Cards de métricas
+# Cards de métricas 
 media_idade = df["Idade"].mean()
 total_atestados = df[df["Atestado"] == 1].shape[0]
 total_respiratorio = df[df["SindRespiratoria"] == 1].shape[0]
@@ -42,10 +42,10 @@ with st.container():
     col_graf1, col_graf2 = st.columns(2)
 
     with col_graf1:
-        st.markdown("Atendimentos por Médico")
+        st.markdown("Atendimento por Médico")
         fig1, ax1 = plt.subplots(figsize=(3.5, 2.5))
         sns.countplot(data=df, x="Medico", ax=ax1, palette="coolwarm")
-        ax1.set_xlabel("Médico")
+        ax1.set_xlabel("")
         ax1.set_ylabel("Qtd")
         plt.xticks(rotation=45)
         st.pyplot(fig1)
@@ -54,19 +54,19 @@ with st.container():
         st.markdown("Atendimentos por Turno")
         fig2, ax2 = plt.subplots(figsize=(3.5, 2.5))
         sns.countplot(data=df, x="Turno", order=df["Turno"].value_counts().index, ax=ax2, palette="viridis")
-        ax2.set_xlabel("Turno")
+        ax2.set_xlabel("")
         ax2.set_ylabel("Qtd")
         st.pyplot(fig2)
 
-# Segunda linha de gráficos
+# Segunda linha de gráfico
 with st.container():
     col_graf3, col_graf4 = st.columns(2)
 
     with col_graf3:
         st.markdown("Casos Respiratórios por Idade")
-        respiratorio_df = df[df["SindRespiratoria"] == 1]
+        respiratorios_df = df[df["SindRespiratoria"] == 1]
         fig3, ax3 = plt.subplots(figsize=(3.5, 2.5))
-        sns.histplot(respiratorio_df["Idade"], bins=10, kde=True, color="purple", ax=ax3)
+        sns.histplot(respiratorios_df["Idade"], bins=10, kde=True, color="purple", ax=ax3)
         ax3.set_xlabel("Idade")
         ax3.set_ylabel("Casos")
         st.pyplot(fig3)
@@ -75,20 +75,20 @@ with st.container():
         st.markdown("Distribuição por Gênero")
         fig4, ax4 = plt.subplots(figsize=(3.5, 2.5))
         sns.countplot(data=df, x="Genero", ax=ax4, palette="pastel")
-        ax4.set_xlabel("Gênero")
+        ax4.set_xlabel("")
         ax4.set_ylabel("Qtd")
         st.pyplot(fig4)
 
 st.divider()
 
 # Exportar CSV
-st.markdown("## Exportar Dados")
+st.markdown("### Exportar Dados")
 csv = df.to_csv(index=False, sep=';', encoding='utf-8-sig').encode('utf-8-sig')
 st.download_button(
     label="Baixar CSV",
     data=csv,
-    file_name="atendimentos_export.csv",
-    mime="text/csv"
+    file_name='atendimentos_export.csv',
+    mime='text/csv',
 )
 
 st.divider()
@@ -111,15 +111,14 @@ if k > n:
 else:
     prob_5oumais = 1 - binom.cdf(k - 1, n, p_atestado)
     st.write(f"Com base em uma taxa observada de {p_atestado:.1%} de emissão de atestados,")
-    st.write(f"a probabilidade de pelo menos {k} atestados em {n} pacientes é **{prob_5oumais:.2%}**")
+    st.write(f"a probabilidade de pelo menos {k} atestados em {n} pacientes é **{prob_5oumais:.2%}**.")
 
-    # Gráfico da distribuição binomial
+    # Gráfico de distribuição binomial
     probs_binom = [binom.pmf(i, n, p_atestado) for i in range(n+1)]
     fig_b, ax_b = plt.subplots(figsize=(5, 3))
-    ax_b.bar(range(n+1), probs_binom, color=["gray" if i < k else "orange" for i in range(n+1)])
+    bars = ax_b.bar(range(n+1), probs_binom, color=["gray" if i < k else "orange" for i in range(n+1)])
     ax_b.set_xlabel("Número de Atestados")
     ax_b.set_ylabel("Probabilidade")
-    ax_b.set_title("Distribuição Binomial")
     st.pyplot(fig_b)
 
 st.divider()
@@ -128,17 +127,18 @@ st.divider()
 st.markdown("### Casos Respiratórios por Turno (Distribuição de Poisson)")
 casos_por_turno = df.groupby("Turno")["SindRespiratoria"].sum().mean()
 
-k_poisson = st.slider("Número de casos respiratórios desejados (ou mais)", min_value=0, max_value=10, value=3, step=1)
+k_poisson = st.slider("Número de casos respiratórios desejados (ou mais)", 
+                      min_value=0, max_value=10, value=3, step=1)
 prob_3oumais = 1 - poisson.cdf(k_poisson - 1, casos_por_turno)
 
-st.write(f"Com uma média de {casos_por_turno:.2f} casos por turno,")
-st.write(f"a probabilidade de pelo menos {k_poisson} casos em um turno é **{prob_3oumais:.2%}**")
+st.write(f"A média de casos respiratórios por turno é **{casos_por_turno:.2f}**.")
+st.write(f"A probabilidade de pelo menos {k_poisson} casos em um turno é **{prob_3oumais:.2%}**.")
 
 # Gráfico da distribuição de Poisson
-max_k - 10
-probs_poisson = [poisson.pmf(i, casos_por_turno) for i in range(k_poisson+1)]
+max_k = 10
+probs_poisson = [poisson.pmf(i, casos_por_turno) for i in range(max_k+1)]
 fig_p, ax_p = plt.subplots(figsize=(5, 3))
-bars_p = ax_p.bar(range(k_poisson+1), probs_poisson, color=["gray" if i < k_poisson else "orange" for i in range(k_poisson+1)])
+bars_p = ax_p.bar(range(max_k+1), probs_poisson, color=["gray" if i < k_poisson else "orange" for i in range(max_k+1)])
 ax_p.set_xlabel("Número de Casos")
 ax_p.set_ylabel("Probabilidade")
 ax_p.set_title("Distribuição de Poisson")
